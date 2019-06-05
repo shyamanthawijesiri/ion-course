@@ -1,14 +1,48 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Ionic Blank
+     Home
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
-</ion-content>
+<ion-content >
+      <!-- ------------Slide------------ -->
+    <ion-slides pager="true" [options]="slideOpts">
+        <ion-slide>
+          <img src = "../../assets/img/javascript1.jpg">
+        </ion-slide >
+        <ion-slide > 
+            <img src = "../../assets/img/web1.jpeg">
+        </ion-slide>
+        <ion-slide >
+            <img src = "../../assets/img/mobil1.jpg">
+        </ion-slide>
+      </ion-slides>
+    <!-- ------------End Slide------------ -->
+
+  <body style="background-color:#cdf3d5;">
+  </body>  
+
+  <!-- ----------------Footer Tabs---------------- -->
+  <ion-tabs>
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button tab="browse" >
+          
+          <ion-label>Browse</ion-label>
+          
+        </ion-tab-button>
+    
+        <ion-tab-button tab="login" (click)="gol()">
+          
+          <ion-label>Log In</ion-label>
+        </ion-tab-button>
+        
+        <ion-tab-button tab="signup" (click)="gos()">
+          
+            <ion-label >Sign Up</ion-label>
+          </ion-tab-button>
+        
+      </ion-tab-bar>
+    </ion-tabs>
+    <!-- ----------------End Footer Tabs---------------- -->

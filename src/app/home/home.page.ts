@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -7,4 +8,18 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
+  slideOpts = {
+    effect: 'flip'
+  };
+ 
+  constructor(private router: Router){ }
+
+  gos() {
+    this.router.navigate(['signup']);
+  }
+
+  gol() {
+    this.router.navigate(['login']);
+  }
+     
 }
